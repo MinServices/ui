@@ -1,21 +1,85 @@
-name: Publish Package to npmjs
+name: Build, Sync to Public UI Repo & Publish to npmjs
 on:
   push:
     branches:
+      - src
       - main
+
 jobs:
-  publish:
+  build-and-sync:
+    if: github.ref_name == 'src'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v4
+      - name: Checkout private src-ui repo
+        uses: actions/checkout@v4
+        with:
+          path: src-repo
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+
+      - name: Install dependencies and build package
+        working-directory: src-repo
+        run: |
+          npm install --legacy-peer-deps
+          npm run build
+
+      - name: Checkout public ui repo (main)
+        uses: actions/checkout@v4
+        with:
+          repository: MinServices/ui
+          ref: main
+          token: ${{ secrets.GIT_TOKEN }}
+          path: public-repo
+
+      - name: Sync built files and commit/push to MinServices/ui
+        run: |
+          VERSION=$(node -p "require('./src-repo/package.json').version")
+          rm -rf public-repo/lib
+          cp -r src-repo/lib public-repo/lib
+          cp src-repo/package.json public-repo/package.json
+          cp src-repo/tsup.config.ts public-repo/tsup.config.ts
+          cp src-repo/tailwind.config.js public-repo/tailwind.config.js
+          cp src-repo/tailwind.config.ts public-repo/tailwind.config.ts
+          cp src-repo/README.md public-repo/README.md
+          cp src-repo/Example.md public-repo/Example.md
+          mkdir -p public-repo/.github/workflows
+          cp src-repo/.github/workflows/publish.yml public-repo/.github/workflows/publish.yml
+          cd public-repo
+          git config user.name "MinServices"
+          git config user.email "hieumin023@gmail.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit to MinServices/ui"
+          else
+            git commit -m "Release version ${VERSION}"
+            git push origin main
+          fi
+
+  publish:
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public ui repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js for npm publish
+        uses: actions/setup-node@v4
         with:
           node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
           scope: "@min98"
-      # - run: npm install
-      # - run: npm ci
-      - run: npm publish --access=public
+
+      - name: Publish to npmjs
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          PUBLISHED=$(npm view "@min98/ui@${VERSION}" version 2>/dev/null || true)
+          if [ "$PUBLISHED" = "$VERSION" ]; then
+            echo "@min98/ui@${VERSION} is already published on npm."
+          else
+            npm publish --access=public
+          fi

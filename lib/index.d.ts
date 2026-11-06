@@ -1,7 +1,6 @@
 import * as React$1 from 'react';
 import React__default, { ReactNode } from 'react';
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
-import * as react_jsx_runtime from 'react/jsx-runtime';
 import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
 import * as CLSX from 'clsx';
 import { ClassValue as ClassValue$1 } from 'clsx';
@@ -53,17 +52,17 @@ declare const AccordionContent: React$1.ForwardRefExoticComponent<Omit<Accordion
 declare const AlertDialog: React$1.FC<AlertDialogPrimitive.AlertDialogProps>;
 declare const AlertDialogTrigger: React$1.ForwardRefExoticComponent<AlertDialogPrimitive.AlertDialogTriggerProps & React$1.RefAttributes<HTMLButtonElement>>;
 declare const AlertDialogPortal: {
-    ({ ...props }: AlertDialogPrimitive.AlertDialogPortalProps): react_jsx_runtime.JSX.Element;
+    ({ ...props }: AlertDialogPrimitive.AlertDialogPortalProps): React$1.JSX.Element;
     displayName: string | undefined;
 };
 declare const AlertDialogOverlay: React$1.ForwardRefExoticComponent<Omit<AlertDialogPrimitive.AlertDialogOverlayProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const AlertDialogContent: React$1.ForwardRefExoticComponent<Omit<AlertDialogPrimitive.AlertDialogContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const AlertDialogHeader: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): React$1.JSX.Element;
     displayName: string;
 };
 declare const AlertDialogFooter: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): React$1.JSX.Element;
     displayName: string;
 };
 declare const AlertDialogTitle: React$1.ForwardRefExoticComponent<Omit<AlertDialogPrimitive.AlertDialogTitleProps & React$1.RefAttributes<HTMLHeadingElement>, "ref"> & React$1.RefAttributes<HTMLHeadingElement>>;
@@ -128,7 +127,7 @@ interface BadgeProps extends Omit<BadgeCustom, "color">, VariantProps<typeof bad
     color?: Color;
 }
 declare const Badge: {
-    ({ className, variant, color, ...props }: BadgeProps): react_jsx_runtime.JSX.Element;
+    ({ className, variant, color, ...props }: BadgeProps): React$1.JSX.Element;
     displayName: string;
 };
 
@@ -176,11 +175,11 @@ declare const Separator: React$1.ForwardRefExoticComponent<Omit<SeparatorPrimiti
 declare const buttonGroupVariants: (props?: ({
     orientation?: "horizontal" | "vertical" | null | undefined;
 } & ClassProp) | undefined) => string;
-declare function ButtonGroup({ className, orientation, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof buttonGroupVariants>): react_jsx_runtime.JSX.Element;
+declare function ButtonGroup({ className, orientation, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof buttonGroupVariants>): React$1.JSX.Element;
 declare function ButtonGroupText({ className, asChild, ...props }: React$1.ComponentProps<"div"> & {
     asChild?: boolean;
-}): react_jsx_runtime.JSX.Element;
-declare function ButtonGroupSeparator({ className, orientation, ...props }: React$1.ComponentProps<typeof Separator>): react_jsx_runtime.JSX.Element;
+}): React$1.JSX.Element;
+declare function ButtonGroupSeparator({ className, orientation, ...props }: React$1.ComponentProps<typeof Separator>): React$1.JSX.Element;
 
 declare const Breadcrumb: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLElement>, HTMLElement>, "ref"> & {
     separator?: React$1.ReactNode;
@@ -188,21 +187,21 @@ declare const Breadcrumb: React$1.ForwardRefExoticComponent<Omit<React$1.Detaile
 declare const BreadcrumbList: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.OlHTMLAttributes<HTMLOListElement>, HTMLOListElement>, "ref"> & React$1.RefAttributes<HTMLOListElement>>;
 declare const BreadcrumbItem: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.LiHTMLAttributes<HTMLLIElement>, HTMLLIElement>, "ref"> & React$1.RefAttributes<HTMLLIElement>>;
 declare const BreadcrumbLink: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>, "ref"> & {
-    asChild?: boolean | undefined;
+    asChild?: boolean;
 } & React$1.RefAttributes<HTMLAnchorElement>>;
 declare const BreadcrumbPage: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, "ref"> & React$1.RefAttributes<HTMLSpanElement>>;
 declare const BreadcrumbSeparator: {
-    ({ children, className, ...props }: React$1.ComponentProps<"li">): react_jsx_runtime.JSX.Element;
+    ({ children, className, ...props }: React$1.ComponentProps<"li">): React$1.JSX.Element;
     displayName: string;
 };
 declare const BreadcrumbEllipsis: {
-    ({ className, ...props }: React$1.ComponentProps<"span">): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.ComponentProps<"span">): React$1.JSX.Element;
     displayName: string;
 };
 
 type CalendarProps = React$1.ComponentProps<typeof DayPicker>;
 declare const Calendar: {
-    ({ className, classNames, showOutsideDays, ...props }: CalendarProps): react_jsx_runtime.JSX.Element;
+    ({ className, classNames, showOutsideDays, ...props }: CalendarProps): React$1.JSX.Element;
     displayName: string;
 };
 
@@ -229,41 +228,41 @@ declare const ChartContainer: React$1.ForwardRefExoticComponent<Omit<React$1.Cla
 declare const ChartStyle: ({ id, config }: {
     id: string;
     config: ChartConfig;
-}) => react_jsx_runtime.JSX.Element | null;
+}) => React$1.JSX.Element | null;
 declare const ChartTooltip: typeof RechartsPrimitive.Tooltip;
 declare const ChartTooltipContent: React$1.ForwardRefExoticComponent<Omit<RechartsPrimitive.DefaultTooltipContentProps<recharts_types_component_DefaultTooltipContent.ValueType, recharts_types_component_DefaultTooltipContent.NameType> & {
-    accessibilityLayer?: boolean | undefined;
+    accessibilityLayer?: boolean;
     active?: boolean | undefined;
     includeHidden?: boolean | undefined;
-    allowEscapeViewBox?: recharts_types_util_types.AllowInDimension | undefined;
-    animationDuration?: number | undefined;
-    animationEasing?: recharts_types_util_types.AnimationTiming | undefined;
+    allowEscapeViewBox?: recharts_types_util_types.AllowInDimension;
+    animationDuration?: recharts_types_util_types.AnimationDuration;
+    animationEasing?: recharts_types_util_types.AnimationTiming;
     content?: recharts_types_component_Tooltip.ContentType<recharts_types_component_DefaultTooltipContent.ValueType, recharts_types_component_DefaultTooltipContent.NameType> | undefined;
-    coordinate?: Partial<recharts_types_util_types.Coordinate> | undefined;
-    cursor?: boolean | React$1.SVGProps<SVGElement> | React$1.ReactElement<any, string | React$1.JSXElementConstructor<any>> | undefined;
-    filterNull?: boolean | undefined;
-    defaultIndex?: number | undefined;
-    isAnimationActive?: boolean | undefined;
-    offset?: number | undefined;
+    coordinate?: Partial<recharts_types_util_types.Coordinate>;
+    cursor?: boolean | React$1.ReactElement | React$1.SVGProps<SVGElement>;
+    filterNull?: boolean;
+    defaultIndex?: number;
+    isAnimationActive?: boolean;
+    offset?: number;
     payloadUniqBy?: recharts_types_util_payload_getUniqPayload.UniqueOption<recharts_types_component_DefaultTooltipContent.Payload<recharts_types_component_DefaultTooltipContent.ValueType, recharts_types_component_DefaultTooltipContent.NameType>> | undefined;
-    position?: Partial<recharts_types_util_types.Coordinate> | undefined;
-    reverseDirection?: recharts_types_util_types.AllowInDimension | undefined;
-    shared?: boolean | undefined;
-    trigger?: "hover" | "click" | undefined;
-    useTranslate3d?: boolean | undefined;
-    viewBox?: recharts_types_util_types.CartesianViewBox | undefined;
-    wrapperStyle?: React$1.CSSProperties | undefined;
+    position?: Partial<recharts_types_util_types.Coordinate>;
+    reverseDirection?: recharts_types_util_types.AllowInDimension;
+    shared?: boolean;
+    trigger?: "hover" | "click";
+    useTranslate3d?: boolean;
+    viewBox?: recharts_types_util_types.CartesianViewBox;
+    wrapperStyle?: React$1.CSSProperties;
 } & React$1.ClassAttributes<HTMLDivElement> & React$1.HTMLAttributes<HTMLDivElement> & {
-    hideLabel?: boolean | undefined;
-    hideIndicator?: boolean | undefined;
-    indicator?: "line" | "dot" | "dashed" | undefined;
-    nameKey?: string | undefined;
-    labelKey?: string | undefined;
+    hideLabel?: boolean;
+    hideIndicator?: boolean;
+    indicator?: "line" | "dot" | "dashed";
+    nameKey?: string;
+    labelKey?: string;
 }, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const ChartLegend: typeof RechartsPrimitive.Legend;
 declare const ChartLegendContent: React$1.ForwardRefExoticComponent<Omit<React$1.ClassAttributes<HTMLDivElement> & React$1.HTMLAttributes<HTMLDivElement> & Pick<RechartsPrimitive.LegendProps, "payload" | "verticalAlign"> & {
-    hideIcon?: boolean | undefined;
-    nameKey?: string | undefined;
+    hideIcon?: boolean;
+    nameKey?: string;
 }, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 
 declare const Card: React$1.ForwardRefExoticComponent<React$1.HTMLAttributes<HTMLDivElement> & React$1.RefAttributes<HTMLDivElement>>;
@@ -323,8 +322,8 @@ type CarouselDotsProps = React$1.HTMLAttributes<HTMLDivElement> & {
     classNameDot?: string;
 };
 declare const CarouselDots: React$1.ForwardRefExoticComponent<React$1.HTMLAttributes<HTMLDivElement> & {
-    className?: string | undefined;
-    classNameDot?: string | undefined;
+    className?: string;
+    classNameDot?: string;
 } & React$1.RefAttributes<HTMLDivElement>>;
 
 declare const Checkbox: React$1.ForwardRefExoticComponent<Omit<CheckboxPrimitive.CheckboxProps & React$1.RefAttributes<HTMLButtonElement>, "ref"> & React$1.RefAttributes<HTMLButtonElement>>;
@@ -336,24 +335,24 @@ declare const CollapsibleContent: React$1.ForwardRefExoticComponent<CollapsibleP
 declare const Command: React$1.ForwardRefExoticComponent<Omit<{
     children?: React$1.ReactNode;
 } & React$1.HTMLAttributes<HTMLDivElement> & {
-    label?: string | undefined;
-    shouldFilter?: boolean | undefined;
-    filter?: ((value: string, search: string) => number) | undefined;
-    defaultValue?: string | undefined;
-    value?: string | undefined;
-    onValueChange?: ((value: string) => void) | undefined;
-    loop?: boolean | undefined;
-    vimBindings?: boolean | undefined;
+    label?: string;
+    shouldFilter?: boolean;
+    filter?: (value: string, search: string) => number;
+    defaultValue?: string;
+    value?: string;
+    onValueChange?: (value: string) => void;
+    loop?: boolean;
+    vimBindings?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 interface CommandDialogProps extends DialogProps$2 {
 }
 declare const CommandDialog: {
-    ({ children, ...props }: CommandDialogProps): react_jsx_runtime.JSX.Element;
+    ({ children, ...props }: CommandDialogProps): React$1.JSX.Element;
     displayName: string;
 };
 declare const CommandInput: React$1.ForwardRefExoticComponent<Omit<Omit<React$1.InputHTMLAttributes<HTMLInputElement>, "onChange" | "value" | "type"> & {
-    value?: string | undefined;
-    onValueChange?: ((search: string) => void) | undefined;
+    value?: string;
+    onValueChange?: (search: string) => void;
 } & React$1.RefAttributes<HTMLInputElement>, "ref"> & React$1.RefAttributes<HTMLInputElement>>;
 declare const CommandList: React$1.ForwardRefExoticComponent<Omit<{
     children?: React$1.ReactNode;
@@ -365,22 +364,22 @@ declare const CommandGroup: React$1.ForwardRefExoticComponent<Omit<{
     children?: React$1.ReactNode;
 } & Omit<React$1.HTMLAttributes<HTMLDivElement>, "value" | "heading"> & {
     heading?: React$1.ReactNode;
-    value?: string | undefined;
-    forceMount?: boolean | undefined;
+    value?: string;
+    forceMount?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const CommandSeparator: React$1.ForwardRefExoticComponent<Omit<React$1.HTMLAttributes<HTMLDivElement> & {
-    alwaysRender?: boolean | undefined;
+    alwaysRender?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const CommandItem: React$1.ForwardRefExoticComponent<Omit<{
     children?: React$1.ReactNode;
 } & Omit<React$1.HTMLAttributes<HTMLDivElement>, "onSelect" | "disabled" | "value"> & {
-    disabled?: boolean | undefined;
-    onSelect?: ((value: string) => void) | undefined;
-    value?: string | undefined;
-    forceMount?: boolean | undefined;
+    disabled?: boolean;
+    onSelect?: (value: string) => void;
+    value?: string;
+    forceMount?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const CommandShortcut: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLSpanElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLSpanElement>): React$1.JSX.Element;
     displayName: string;
 };
 
@@ -391,21 +390,21 @@ declare const ContextMenuPortal: React$1.FC<ContextMenuPrimitive.ContextMenuPort
 declare const ContextMenuSub: React$1.FC<ContextMenuPrimitive.ContextMenuSubProps>;
 declare const ContextMenuRadioGroup: React$1.ForwardRefExoticComponent<ContextMenuPrimitive.ContextMenuRadioGroupProps & React$1.RefAttributes<HTMLDivElement>>;
 declare const ContextMenuSubTrigger: React$1.ForwardRefExoticComponent<Omit<ContextMenuPrimitive.ContextMenuSubTriggerProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & {
-    inset?: boolean | undefined;
+    inset?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>>;
 declare const ContextMenuSubContent: React$1.ForwardRefExoticComponent<Omit<ContextMenuPrimitive.ContextMenuSubContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const ContextMenuContent: React$1.ForwardRefExoticComponent<Omit<ContextMenuPrimitive.ContextMenuContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const ContextMenuItem: React$1.ForwardRefExoticComponent<Omit<ContextMenuPrimitive.ContextMenuItemProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & {
-    inset?: boolean | undefined;
+    inset?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>>;
 declare const ContextMenuCheckboxItem: React$1.ForwardRefExoticComponent<Omit<ContextMenuPrimitive.ContextMenuCheckboxItemProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const ContextMenuRadioItem: React$1.ForwardRefExoticComponent<Omit<ContextMenuPrimitive.ContextMenuRadioItemProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const ContextMenuLabel: React$1.ForwardRefExoticComponent<Omit<ContextMenuPrimitive.ContextMenuLabelProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & {
-    inset?: boolean | undefined;
+    inset?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>>;
 declare const ContextMenuSeparator: React$1.ForwardRefExoticComponent<Omit<ContextMenuPrimitive.ContextMenuSeparatorProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const ContextMenuShortcut: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLSpanElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLSpanElement>): React$1.JSX.Element;
     displayName: string;
 };
 
@@ -423,7 +422,7 @@ type ContextMenuCustomProps = {
     list?: ContextMenuTypeProps[];
 };
 declare const RenderContextMenuItem: {
-    (list: ContextMenuTypeProps[]): react_jsx_runtime.JSX.Element;
+    (list: ContextMenuTypeProps[]): React__default.JSX.Element;
     displayName: string;
 };
 declare const ContextMenuCustom: React__default.ForwardRefExoticComponent<ContextMenuCustomProps & React__default.RefAttributes<HTMLButtonElement>>;
@@ -478,16 +477,16 @@ type DialogProps$1 = {
     preventScrollRestoration?: boolean;
     disablePreventScroll?: boolean;
 } & (WithFadeFromProps | WithoutFadeFromProps);
-declare function Root({ open: openProp, onOpenChange, children, shouldScaleBackground, onDrag: onDragProp, onRelease: onReleaseProp, snapPoints, nested, setBackgroundColorOnScale, closeThreshold, scrollLockTimeout, dismissible, handleOnly, fadeFromIndex, activeSnapPoint: activeSnapPointProp, setActiveSnapPoint: setActiveSnapPointProp, fixed, modal, onClose, noBodyStyles, direction, preventScrollRestoration, disablePreventScroll, }: DialogProps$1): react_jsx_runtime.JSX.Element;
-declare function NestedRoot({ onDrag, onOpenChange, ...rest }: DialogProps$1): react_jsx_runtime.JSX.Element;
+declare function Root({ open: openProp, onOpenChange, children, shouldScaleBackground, onDrag: onDragProp, onRelease: onReleaseProp, snapPoints, nested, setBackgroundColorOnScale, closeThreshold, scrollLockTimeout, dismissible, handleOnly, fadeFromIndex, activeSnapPoint: activeSnapPointProp, setActiveSnapPoint: setActiveSnapPointProp, fixed, modal, onClose, noBodyStyles, direction, preventScrollRestoration, disablePreventScroll, }: DialogProps$1): React__default.JSX.Element;
+declare function NestedRoot({ onDrag, onOpenChange, ...rest }: DialogProps$1): React__default.JSX.Element;
 declare const Drawer$1: {
     Root: typeof Root;
     NestedRoot: typeof NestedRoot;
     Content: React__default.ForwardRefExoticComponent<Omit<DialogPrimitive.DialogContentProps & React__default.RefAttributes<HTMLDivElement>, "ref"> & {
-        onAnimationEnd?: ((open: boolean) => void) | undefined;
+        onAnimationEnd?: (open: boolean) => void;
     } & React__default.RefAttributes<HTMLDivElement>>;
     Handle: React__default.ForwardRefExoticComponent<Omit<React__default.DetailedHTMLProps<React__default.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref"> & {
-        preventCycle?: boolean | undefined;
+        preventCycle?: boolean;
     } & React__default.RefAttributes<HTMLDivElement>>;
     Overlay: React__default.ForwardRefExoticComponent<Omit<DialogPrimitive.DialogOverlayProps & React__default.RefAttributes<HTMLDivElement>, "ref"> & React__default.RefAttributes<HTMLDivElement>>;
     Trigger: React__default.ForwardRefExoticComponent<DialogPrimitive.DialogTriggerProps & React__default.RefAttributes<HTMLButtonElement>>;
@@ -498,7 +497,7 @@ declare const Drawer$1: {
 };
 
 declare const Drawer: {
-    ({ shouldScaleBackground, ...props }: React$1.ComponentProps<typeof Drawer$1.Root>): react_jsx_runtime.JSX.Element;
+    ({ shouldScaleBackground, ...props }: React$1.ComponentProps<typeof Drawer$1.Root>): React$1.JSX.Element;
     displayName: string;
 };
 declare const DrawerTrigger: React$1.ForwardRefExoticComponent<DialogPrimitive.DialogTriggerProps & React$1.RefAttributes<HTMLButtonElement>>;
@@ -506,14 +505,14 @@ declare const DrawerPortal: React$1.FC<DialogPrimitive.DialogPortalProps>;
 declare const DrawerClose: React$1.ForwardRefExoticComponent<DialogPrimitive.DialogCloseProps & React$1.RefAttributes<HTMLButtonElement>>;
 declare const DrawerOverlay: React$1.ForwardRefExoticComponent<Omit<Omit<DialogPrimitive.DialogOverlayProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const DrawerContent: React$1.ForwardRefExoticComponent<Omit<Omit<DialogPrimitive.DialogContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & {
-    onAnimationEnd?: ((open: boolean) => void) | undefined;
+    onAnimationEnd?: (open: boolean) => void;
 } & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const DrawerHeader: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): React$1.JSX.Element;
     displayName: string;
 };
 declare const DrawerFooter: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): React$1.JSX.Element;
     displayName: string;
 };
 declare const DrawerTitle: React$1.ForwardRefExoticComponent<Omit<DialogPrimitive.DialogTitleProps & React$1.RefAttributes<HTMLHeadingElement>, "ref"> & React$1.RefAttributes<HTMLHeadingElement>>;
@@ -529,7 +528,7 @@ declare const Dialog: React$1.FC<DialogPrimitive.DialogProps>;
 declare const DialogTrigger: React$1.ForwardRefExoticComponent<DialogPrimitive.DialogTriggerProps & React$1.RefAttributes<HTMLButtonElement>>;
 declare const DialogClose: React$1.ForwardRefExoticComponent<DialogPrimitive.DialogCloseProps & React$1.RefAttributes<HTMLButtonElement>>;
 declare const DialogPortal: {
-    ({ ...props }: DialogPrimitive.DialogPortalProps): react_jsx_runtime.JSX.Element;
+    ({ ...props }: DialogPrimitive.DialogPortalProps): React$1.JSX.Element;
     displayName: string | undefined;
 };
 declare const DialogOverlay: React$1.ForwardRefExoticComponent<Omit<DialogPrimitive.DialogOverlayProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
@@ -543,11 +542,11 @@ interface DialogProps extends DialogCustom, React$1.ComponentPropsWithoutRef<typ
 }
 declare const DialogContent: React$1.ForwardRefExoticComponent<DialogProps & React$1.RefAttributes<HTMLDivElement>>;
 declare const DialogHeader: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): React$1.JSX.Element;
     displayName: string;
 };
 declare const DialogFooter: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): React$1.JSX.Element;
     displayName: string;
 };
 declare const DialogTitle: React$1.ForwardRefExoticComponent<Omit<DialogPrimitive.DialogTitleProps & React$1.RefAttributes<HTMLHeadingElement>, "ref"> & React$1.RefAttributes<HTMLHeadingElement>>;
@@ -560,64 +559,65 @@ declare const DropdownMenuPortal: React$1.FC<DropdownMenuPrimitive.DropdownMenuP
 declare const DropdownMenuSub: React$1.FC<DropdownMenuPrimitive.DropdownMenuSubProps>;
 declare const DropdownMenuRadioGroup: React$1.ForwardRefExoticComponent<DropdownMenuPrimitive.DropdownMenuRadioGroupProps & React$1.RefAttributes<HTMLDivElement>>;
 declare const DropdownMenuSubTrigger: React$1.ForwardRefExoticComponent<Omit<DropdownMenuPrimitive.DropdownMenuSubTriggerProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & {
-    inset?: boolean | undefined;
+    inset?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>>;
 declare const DropdownMenuSubContent: React$1.ForwardRefExoticComponent<Omit<DropdownMenuPrimitive.DropdownMenuSubContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const DropdownMenuContent: React$1.ForwardRefExoticComponent<Omit<DropdownMenuPrimitive.DropdownMenuContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const DropdownMenuItem: React$1.ForwardRefExoticComponent<Omit<DropdownMenuPrimitive.DropdownMenuItemProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & {
-    inset?: boolean | undefined;
+    inset?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>>;
 declare const DropdownMenuCheckboxItem: React$1.ForwardRefExoticComponent<Omit<DropdownMenuPrimitive.DropdownMenuCheckboxItemProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const DropdownMenuRadioItem: React$1.ForwardRefExoticComponent<Omit<DropdownMenuPrimitive.DropdownMenuRadioItemProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const DropdownMenuLabel: React$1.ForwardRefExoticComponent<Omit<DropdownMenuPrimitive.DropdownMenuLabelProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & {
-    inset?: boolean | undefined;
+    inset?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>>;
 declare const DropdownMenuSeparator: React$1.ForwardRefExoticComponent<Omit<DropdownMenuPrimitive.DropdownMenuSeparatorProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const DropdownMenuShortcut: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLSpanElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLSpanElement>): React$1.JSX.Element;
     displayName: string;
 };
 
-declare function Empty({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
-declare function EmptyHeader({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
+declare function Empty({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
+declare function EmptyHeader({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
 declare const emptyMediaVariants: (props?: ({
     variant?: "default" | "icon" | null | undefined;
 } & ClassProp) | undefined) => string;
-declare function EmptyMedia({ className, variant, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof emptyMediaVariants>): react_jsx_runtime.JSX.Element;
-declare function EmptyTitle({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
-declare function EmptyDescription({ className, ...props }: React$1.ComponentProps<"p">): react_jsx_runtime.JSX.Element;
-declare function EmptyContent({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
+declare function EmptyMedia({ className, variant, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof emptyMediaVariants>): React$1.JSX.Element;
+declare function EmptyTitle({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
+declare function EmptyDescription({ className, ...props }: React$1.ComponentProps<"p">): React$1.JSX.Element;
+declare function EmptyContent({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
 
 declare const Label: React$1.ForwardRefExoticComponent<Omit<LabelPrimitive.LabelProps & React$1.RefAttributes<HTMLLabelElement>, "ref"> & VariantProps<(props?: ClassProp | undefined) => string> & React$1.RefAttributes<HTMLLabelElement>>;
 
-declare function FieldSet({ className, ...props }: React$1.ComponentProps<"fieldset">): react_jsx_runtime.JSX.Element;
+declare function FieldSet({ className, ...props }: React$1.ComponentProps<"fieldset">): React$1.JSX.Element;
 declare function FieldLegend({ className, variant, ...props }: React$1.ComponentProps<"legend"> & {
     variant?: "legend" | "label";
-}): react_jsx_runtime.JSX.Element;
-declare function FieldGroup({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
+}): React$1.JSX.Element;
+declare function FieldGroup({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
 declare const fieldVariants: (props?: ({
     orientation?: "horizontal" | "vertical" | "responsive" | null | undefined;
 } & ClassProp) | undefined) => string;
-declare function Field({ className, orientation, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof fieldVariants>): react_jsx_runtime.JSX.Element;
-declare function FieldContent({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
-declare function FieldLabel({ className, ...props }: React$1.ComponentProps<typeof Label>): react_jsx_runtime.JSX.Element;
-declare function FieldTitle({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
-declare function FieldDescription({ className, ...props }: React$1.ComponentProps<"p">): react_jsx_runtime.JSX.Element;
+declare function Field({ className, orientation, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof fieldVariants>): React$1.JSX.Element;
+declare function FieldContent({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
+declare function FieldLabel({ className, ...props }: React$1.ComponentProps<typeof Label>): React$1.JSX.Element;
+declare function FieldTitle({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
+declare function FieldDescription({ className, ...props }: React$1.ComponentProps<"p">): React$1.JSX.Element;
 declare function FieldSeparator({ children, className, ...props }: React$1.ComponentProps<"div"> & {
     children?: React$1.ReactNode;
-}): react_jsx_runtime.JSX.Element;
+}): React$1.JSX.Element;
 declare function FieldError({ className, children, errors, ...props }: React$1.ComponentProps<"div"> & {
     errors?: Array<{
         message?: string;
     } | undefined>;
-}): react_jsx_runtime.JSX.Element | null;
+}): React$1.JSX.Element | null;
 
-declare const Form: <TFieldValues extends FieldValues, TContext = any, TTransformedValues extends FieldValues | undefined = undefined>(props: react_hook_form.FormProviderProps<TFieldValues, TContext, TTransformedValues>) => JSX.Element;
-declare const FormField: <TFieldValues extends FieldValues = FieldValues, TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>>({ ...props }: ControllerProps<TFieldValues, TName>) => react_jsx_runtime.JSX.Element;
+declare const Form: <TFieldValues extends FieldValues, TContext = any, TTransformedValues = TFieldValues>({ children, watch, getValues, getErrors, getFieldState, setError, clearErrors, setValue, setValues, trigger, formState, resetField, reset, resetDefaultValues, handleSubmit, unregister, control, register, setFocus, subscribe, }: react_hook_form.FormProviderProps<TFieldValues, TContext, TTransformedValues>) => React$1.JSX.Element;
+declare const FormField: <TFieldValues extends FieldValues = FieldValues, TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>>({ ...props }: ControllerProps<TFieldValues, TName>) => React$1.JSX.Element;
 declare const useFormField: () => {
     invalid: boolean;
     isDirty: boolean;
     isTouched: boolean;
+    isValidating: boolean;
     error?: react_hook_form.FieldError | undefined;
     id: string;
     name: string;
@@ -628,7 +628,7 @@ declare const useFormField: () => {
 declare const FormItem: React$1.ForwardRefExoticComponent<React$1.HTMLAttributes<HTMLDivElement> & React$1.RefAttributes<HTMLDivElement>>;
 declare const FormLabel: React$1.ForwardRefExoticComponent<Omit<LabelPrimitive.LabelProps & React$1.RefAttributes<HTMLLabelElement>, "ref"> & React$1.RefAttributes<HTMLLabelElement>>;
 declare const FormControl: React$1.ForwardRefExoticComponent<Omit<React$1.HTMLAttributes<HTMLElement> & {
-    children?: React$1.ReactNode;
+    children?: React$1.ReactNode | undefined;
 } & React$1.RefAttributes<HTMLElement>, "ref"> & React$1.RefAttributes<HTMLElement>>;
 declare const FormDescription: React$1.ForwardRefExoticComponent<React$1.HTMLAttributes<HTMLParagraphElement> & React$1.RefAttributes<HTMLParagraphElement>>;
 declare const FormMessage: React$1.ForwardRefExoticComponent<React$1.HTMLAttributes<HTMLParagraphElement> & React$1.RefAttributes<HTMLParagraphElement>>;
@@ -641,42 +641,46 @@ interface InputProps extends React$1.InputHTMLAttributes<HTMLInputElement> {
 }
 declare const Input: React$1.ForwardRefExoticComponent<InputProps & React$1.RefAttributes<HTMLInputElement>>;
 
-declare function InputGroup({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
+declare function InputGroup({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
 declare const inputGroupAddonVariants: (props?: ({
-    align?: "block-end" | "block-start" | "inline-end" | "inline-start" | null | undefined;
+    align?: "inline-end" | "inline-start" | "block-end" | "block-start" | null | undefined;
 } & ClassProp) | undefined) => string;
-declare function InputGroupAddon({ className, align, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof inputGroupAddonVariants>): react_jsx_runtime.JSX.Element;
+declare function InputGroupAddon({ className, align, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof inputGroupAddonVariants>): React$1.JSX.Element;
 declare const inputGroupButtonVariants: (props?: ({
     size?: "sm" | "xs" | "icon-xs" | "icon-sm" | null | undefined;
 } & ClassProp) | undefined) => string;
-declare function InputGroupButton({ className, type, variant, size, ...props }: Omit<React$1.ComponentProps<typeof Button>, "size"> & VariantProps<typeof inputGroupButtonVariants>): react_jsx_runtime.JSX.Element;
-declare function InputGroupText({ className, ...props }: React$1.ComponentProps<"span">): react_jsx_runtime.JSX.Element;
-declare function InputGroupInput({ className, ...props }: React$1.ComponentProps<"input">): react_jsx_runtime.JSX.Element;
-declare function InputGroupTextarea({ className, ...props }: React$1.ComponentProps<"textarea">): react_jsx_runtime.JSX.Element;
+declare function InputGroupButton({ className, type, variant, size, ...props }: Omit<React$1.ComponentProps<typeof Button>, "size"> & VariantProps<typeof inputGroupButtonVariants>): React$1.JSX.Element;
+declare function InputGroupText({ className, ...props }: React$1.ComponentProps<"span">): React$1.JSX.Element;
+declare function InputGroupInput({ className, ...props }: React$1.ComponentProps<"input">): React$1.JSX.Element;
+declare function InputGroupTextarea({ className, ...props }: React$1.ComponentProps<"textarea">): React$1.JSX.Element;
 
-declare const InputOTP: React$1.ForwardRefExoticComponent<(Omit<Omit<React$1.InputHTMLAttributes<HTMLInputElement>, "onChange" | "value" | "maxLength" | "textAlign" | "onComplete" | "pushPasswordManagerStrategy" | "containerClassName" | "noScriptCSSFallback"> & {
-    value?: string | undefined;
-    onChange?: ((newValue: string) => unknown) | undefined;
+declare const InputOTP: React$1.ForwardRefExoticComponent<(Omit<Omit<React$1.InputHTMLAttributes<HTMLInputElement>, "nonce" | "onChange" | "value" | "maxLength" | "textAlign" | "onComplete" | "pushPasswordManagerStrategy" | "pasteTransformer" | "containerClassName" | "noScriptCSSFallback"> & {
+    value?: string;
+    onChange?: (newValue: string) => unknown;
     maxLength: number;
-    textAlign?: "center" | "left" | "right" | undefined;
-    onComplete?: ((...args: any[]) => unknown) | undefined;
-    pushPasswordManagerStrategy?: "none" | "increase-width" | undefined;
-    containerClassName?: string | undefined;
-    noScriptCSSFallback?: string | null | undefined;
+    textAlign?: "left" | "center" | "right";
+    onComplete?: (...args: any[]) => unknown;
+    pushPasswordManagerStrategy?: "increase-width" | "none";
+    pasteTransformer?: (pasted: string) => string;
+    containerClassName?: string;
+    noScriptCSSFallback?: string | null;
+    nonce?: string;
 } & {
     render: (props: input_otp.RenderProps) => React$1.ReactNode;
-    children?: undefined;
-} & React$1.RefAttributes<HTMLInputElement>, "ref"> | Omit<Omit<React$1.InputHTMLAttributes<HTMLInputElement>, "onChange" | "value" | "maxLength" | "textAlign" | "onComplete" | "pushPasswordManagerStrategy" | "containerClassName" | "noScriptCSSFallback"> & {
-    value?: string | undefined;
-    onChange?: ((newValue: string) => unknown) | undefined;
+    children?: never;
+} & React$1.RefAttributes<HTMLInputElement>, "ref"> | Omit<Omit<React$1.InputHTMLAttributes<HTMLInputElement>, "nonce" | "onChange" | "value" | "maxLength" | "textAlign" | "onComplete" | "pushPasswordManagerStrategy" | "pasteTransformer" | "containerClassName" | "noScriptCSSFallback"> & {
+    value?: string;
+    onChange?: (newValue: string) => unknown;
     maxLength: number;
-    textAlign?: "center" | "left" | "right" | undefined;
-    onComplete?: ((...args: any[]) => unknown) | undefined;
-    pushPasswordManagerStrategy?: "none" | "increase-width" | undefined;
-    containerClassName?: string | undefined;
-    noScriptCSSFallback?: string | null | undefined;
+    textAlign?: "left" | "center" | "right";
+    onComplete?: (...args: any[]) => unknown;
+    pushPasswordManagerStrategy?: "increase-width" | "none";
+    pasteTransformer?: (pasted: string) => string;
+    containerClassName?: string;
+    noScriptCSSFallback?: string | null;
+    nonce?: string;
 } & {
-    render?: undefined;
+    render?: never;
     children: React$1.ReactNode;
 } & React$1.RefAttributes<HTMLInputElement>, "ref">) & React$1.RefAttributes<HTMLInputElement>>;
 declare const InputOTPGroup: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
@@ -685,52 +689,52 @@ declare const InputOTPSlot: React$1.ForwardRefExoticComponent<Omit<React$1.Detai
 } & React$1.RefAttributes<HTMLDivElement>>;
 declare const InputOTPSeparator: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 
-declare function ItemGroup({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
-declare function ItemSeparator({ className, ...props }: React$1.ComponentProps<typeof Separator>): react_jsx_runtime.JSX.Element;
+declare function ItemGroup({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
+declare function ItemSeparator({ className, ...props }: React$1.ComponentProps<typeof Separator>): React$1.JSX.Element;
 declare const itemVariants: (props?: ({
     variant?: "muted" | "default" | "outline" | null | undefined;
     size?: "default" | "sm" | null | undefined;
 } & ClassProp) | undefined) => string;
 declare function Item({ className, variant, size, asChild, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof itemVariants> & {
     asChild?: boolean;
-}): react_jsx_runtime.JSX.Element;
+}): React$1.JSX.Element;
 declare const itemMediaVariants: (props?: ({
     variant?: "image" | "default" | "icon" | null | undefined;
 } & ClassProp) | undefined) => string;
-declare function ItemMedia({ className, variant, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof itemMediaVariants>): react_jsx_runtime.JSX.Element;
-declare function ItemContent({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
-declare function ItemTitle({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
-declare function ItemDescription({ className, ...props }: React$1.ComponentProps<"p">): react_jsx_runtime.JSX.Element;
-declare function ItemActions({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
-declare function ItemHeader({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
-declare function ItemFooter({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
+declare function ItemMedia({ className, variant, ...props }: React$1.ComponentProps<"div"> & VariantProps<typeof itemMediaVariants>): React$1.JSX.Element;
+declare function ItemContent({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
+declare function ItemTitle({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
+declare function ItemDescription({ className, ...props }: React$1.ComponentProps<"p">): React$1.JSX.Element;
+declare function ItemActions({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
+declare function ItemHeader({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
+declare function ItemFooter({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
 
-declare function Kbd({ className, ...props }: React$1.ComponentProps<"kbd">): react_jsx_runtime.JSX.Element;
-declare function KbdGroup({ className, ...props }: React$1.ComponentProps<"div">): react_jsx_runtime.JSX.Element;
+declare function Kbd({ className, ...props }: React$1.ComponentProps<"kbd">): React$1.JSX.Element;
+declare function KbdGroup({ className, ...props }: React$1.ComponentProps<"div">): React$1.JSX.Element;
 
-declare function MenubarMenu({ ...props }: React$1.ComponentProps<typeof MenubarPrimitive.Menu>): react_jsx_runtime.JSX.Element;
-declare function MenubarGroup({ ...props }: React$1.ComponentProps<typeof MenubarPrimitive.Group>): react_jsx_runtime.JSX.Element;
-declare function MenubarPortal({ ...props }: React$1.ComponentProps<typeof MenubarPrimitive.Portal>): react_jsx_runtime.JSX.Element;
-declare function MenubarRadioGroup({ ...props }: React$1.ComponentProps<typeof MenubarPrimitive.RadioGroup>): react_jsx_runtime.JSX.Element;
-declare function MenubarSub({ ...props }: React$1.ComponentProps<typeof MenubarPrimitive.Sub>): react_jsx_runtime.JSX.Element;
+declare function MenubarMenu({ ...props }: React$1.ComponentProps<typeof MenubarPrimitive.Menu>): React$1.JSX.Element;
+declare function MenubarGroup({ ...props }: React$1.ComponentProps<typeof MenubarPrimitive.Group>): React$1.JSX.Element;
+declare function MenubarPortal({ ...props }: React$1.ComponentProps<typeof MenubarPrimitive.Portal>): React$1.JSX.Element;
+declare function MenubarRadioGroup({ ...props }: React$1.ComponentProps<typeof MenubarPrimitive.RadioGroup>): React$1.JSX.Element;
+declare function MenubarSub({ ...props }: React$1.ComponentProps<typeof MenubarPrimitive.Sub>): React$1.JSX.Element;
 declare const Menubar: React$1.ForwardRefExoticComponent<Omit<MenubarPrimitive.MenubarProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const MenubarTrigger: React$1.ForwardRefExoticComponent<Omit<MenubarPrimitive.MenubarTriggerProps & React$1.RefAttributes<HTMLButtonElement>, "ref"> & React$1.RefAttributes<HTMLButtonElement>>;
 declare const MenubarSubTrigger: React$1.ForwardRefExoticComponent<Omit<MenubarPrimitive.MenubarSubTriggerProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & {
-    inset?: boolean | undefined;
+    inset?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>>;
 declare const MenubarSubContent: React$1.ForwardRefExoticComponent<Omit<MenubarPrimitive.MenubarSubContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const MenubarContent: React$1.ForwardRefExoticComponent<Omit<MenubarPrimitive.MenubarContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const MenubarItem: React$1.ForwardRefExoticComponent<Omit<MenubarPrimitive.MenubarItemProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & {
-    inset?: boolean | undefined;
+    inset?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>>;
 declare const MenubarCheckboxItem: React$1.ForwardRefExoticComponent<Omit<MenubarPrimitive.MenubarCheckboxItemProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const MenubarRadioItem: React$1.ForwardRefExoticComponent<Omit<MenubarPrimitive.MenubarRadioItemProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const MenubarLabel: React$1.ForwardRefExoticComponent<Omit<MenubarPrimitive.MenubarLabelProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & {
-    inset?: boolean | undefined;
+    inset?: boolean;
 } & React$1.RefAttributes<HTMLDivElement>>;
 declare const MenubarSeparator: React$1.ForwardRefExoticComponent<Omit<MenubarPrimitive.MenubarSeparatorProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const MenubarShortcut: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLSpanElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLSpanElement>): React$1.JSX.Element;
     displayname: string;
 };
 
@@ -797,7 +801,7 @@ declare const NavigationMenuViewport: React$1.ForwardRefExoticComponent<Omit<Nav
 declare const NavigationMenuIndicator: React$1.ForwardRefExoticComponent<Omit<NavigationMenuPrimitive.NavigationMenuIndicatorProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 
 declare const Pagination: {
-    ({ className, ...props }: React$1.ComponentProps<"nav">): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.ComponentProps<"nav">): React$1.JSX.Element;
     displayName: string;
 };
 declare const PaginationContent: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLUListElement>, HTMLUListElement>, "ref"> & React$1.RefAttributes<HTMLUListElement>>;
@@ -806,19 +810,19 @@ type PaginationLinkProps = {
     isActive?: boolean;
 } & Pick<ButtonProps, "size"> & React$1.ComponentProps<"a">;
 declare const PaginationLink: {
-    ({ className, isActive, size, ...props }: PaginationLinkProps): react_jsx_runtime.JSX.Element;
+    ({ className, isActive, size, ...props }: PaginationLinkProps): React$1.JSX.Element;
     displayName: string;
 };
 declare const PaginationPrevious: {
-    ({ className, ...props }: React$1.ComponentProps<typeof PaginationLink>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.ComponentProps<typeof PaginationLink>): React$1.JSX.Element;
     displayName: string;
 };
 declare const PaginationNext: {
-    ({ className, ...props }: React$1.ComponentProps<typeof PaginationLink>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.ComponentProps<typeof PaginationLink>): React$1.JSX.Element;
     displayName: string;
 };
 declare const PaginationEllipsis: {
-    ({ className, ...props }: React$1.ComponentProps<"span">): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.ComponentProps<"span">): React$1.JSX.Element;
     displayName: string;
 };
 
@@ -853,7 +857,7 @@ declare const Sheet: React$1.FC<DialogPrimitive.DialogProps>;
 declare const SheetTrigger: React$1.ForwardRefExoticComponent<DialogPrimitive.DialogTriggerProps & React$1.RefAttributes<HTMLButtonElement>>;
 declare const SheetClose: React$1.ForwardRefExoticComponent<DialogPrimitive.DialogCloseProps & React$1.RefAttributes<HTMLButtonElement>>;
 declare const SheetPortal: {
-    ({ ...props }: DialogPrimitive.DialogPortalProps): react_jsx_runtime.JSX.Element;
+    ({ ...props }: DialogPrimitive.DialogPortalProps): React$1.JSX.Element;
     displayName: string | undefined;
 };
 declare const SheetOverlay: React$1.ForwardRefExoticComponent<Omit<DialogPrimitive.DialogOverlayProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
@@ -865,11 +869,11 @@ interface SheetContentProps extends React$1.ComponentPropsWithoutRef<typeof Dial
 }
 declare const SheetContent: React$1.ForwardRefExoticComponent<SheetContentProps & React$1.RefAttributes<HTMLDivElement>>;
 declare const SheetHeader: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): React$1.JSX.Element;
     displayName: string;
 };
 declare const SheetFooter: {
-    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React$1.HTMLAttributes<HTMLDivElement>): React$1.JSX.Element;
     displayName: string;
 };
 declare const SheetTitle: React$1.ForwardRefExoticComponent<Omit<DialogPrimitive.DialogTitleProps & React$1.RefAttributes<HTMLHeadingElement>, "ref"> & React$1.RefAttributes<HTMLHeadingElement>>;
@@ -887,6 +891,13 @@ interface SheetCustomProps {
 }
 declare const SheetCustom: React__default.FC<SheetCustomProps>;
 
+declare const TooltipProvider: React$1.FC<TooltipPrimitive.TooltipProviderProps>;
+declare const Tooltip: React$1.FC<TooltipPrimitive.TooltipProps>;
+declare const TooltipTrigger: React$1.ForwardRefExoticComponent<TooltipPrimitive.TooltipTriggerProps & React$1.RefAttributes<HTMLButtonElement>>;
+declare const TooltipArrow: React$1.ForwardRefExoticComponent<TooltipPrimitive.TooltipArrowProps & React$1.RefAttributes<SVGSVGElement>>;
+declare const TooltipPortal: React$1.FC<TooltipPrimitive.TooltipPortalProps>;
+declare const TooltipContent: React$1.ForwardRefExoticComponent<Omit<TooltipPrimitive.TooltipContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
+
 type SidebarContextProps = {
     state: "expanded" | "collapsed";
     open: boolean;
@@ -898,14 +909,14 @@ type SidebarContextProps = {
 };
 declare function useSidebar(): SidebarContextProps;
 declare const SidebarProvider: React$1.ForwardRefExoticComponent<Omit<React$1.ClassAttributes<HTMLDivElement> & React$1.HTMLAttributes<HTMLDivElement> & {
-    defaultOpen?: boolean | undefined;
-    open?: boolean | undefined;
-    onOpenChange?: ((open: boolean) => void) | undefined;
+    defaultOpen?: boolean;
+    open?: boolean;
+    onOpenChange?: (open: boolean) => void;
 }, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const Sidebar: React$1.ForwardRefExoticComponent<Omit<React$1.ClassAttributes<HTMLDivElement> & React$1.HTMLAttributes<HTMLDivElement> & {
-    side?: "left" | "right" | undefined;
-    variant?: "inset" | "sidebar" | "floating" | undefined;
-    collapsible?: "none" | "icon" | "offcanvas" | undefined;
+    side?: "left" | "right";
+    variant?: "sidebar" | "floating" | "inset";
+    collapsible?: "offcanvas" | "icon" | "none";
 }, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const SidebarTrigger: React$1.ForwardRefExoticComponent<Omit<ButtonProps & React$1.RefAttributes<HTMLButtonElement>, "ref"> & React$1.RefAttributes<HTMLButtonElement>>;
 declare const SidebarRail: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, "ref"> & React$1.RefAttributes<HTMLButtonElement>>;
@@ -917,10 +928,10 @@ declare const SidebarSeparator: React$1.ForwardRefExoticComponent<Omit<Omit<Sepa
 declare const SidebarContent: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const SidebarGroup: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const SidebarGroupLabel: React$1.ForwardRefExoticComponent<Omit<React$1.ClassAttributes<HTMLDivElement> & React$1.HTMLAttributes<HTMLDivElement> & {
-    asChild?: boolean | undefined;
+    asChild?: boolean;
 }, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const SidebarGroupAction: React$1.ForwardRefExoticComponent<Omit<React$1.ClassAttributes<HTMLButtonElement> & React$1.ButtonHTMLAttributes<HTMLButtonElement> & {
-    asChild?: boolean | undefined;
+    asChild?: boolean;
 }, "ref"> & React$1.RefAttributes<HTMLButtonElement>>;
 declare const SidebarGroupContent: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const SidebarMenu: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLUListElement>, HTMLUListElement>, "ref"> & React$1.RefAttributes<HTMLUListElement>>;
@@ -930,37 +941,37 @@ declare const sidebarMenuButtonVariants: (props?: ({
     size?: "default" | "sm" | "lg" | null | undefined;
 } & ClassProp) | undefined) => string;
 declare const SidebarMenuButton: React$1.ForwardRefExoticComponent<Omit<React$1.ClassAttributes<HTMLButtonElement> & React$1.ButtonHTMLAttributes<HTMLButtonElement> & {
-    asChild?: boolean | undefined;
-    isActive?: boolean | undefined;
-    tooltip?: string | (Omit<TooltipPrimitive.TooltipContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>) | undefined;
+    asChild?: boolean;
+    isActive?: boolean;
+    tooltip?: string | React$1.ComponentProps<typeof TooltipContent>;
 } & VariantProps<(props?: ({
     variant?: "default" | "outline" | null | undefined;
     size?: "default" | "sm" | "lg" | null | undefined;
 } & ClassProp) | undefined) => string>, "ref"> & React$1.RefAttributes<HTMLButtonElement>>;
 declare const SidebarMenuAction: React$1.ForwardRefExoticComponent<Omit<React$1.ClassAttributes<HTMLButtonElement> & React$1.ButtonHTMLAttributes<HTMLButtonElement> & {
-    asChild?: boolean | undefined;
-    showOnHover?: boolean | undefined;
+    asChild?: boolean;
+    showOnHover?: boolean;
 }, "ref"> & React$1.RefAttributes<HTMLButtonElement>>;
 declare const SidebarMenuBadge: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const SidebarMenuSkeleton: React$1.ForwardRefExoticComponent<Omit<React$1.ClassAttributes<HTMLDivElement> & React$1.HTMLAttributes<HTMLDivElement> & {
-    showIcon?: boolean | undefined;
+    showIcon?: boolean;
 }, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 declare const SidebarMenuSub: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.HTMLAttributes<HTMLUListElement>, HTMLUListElement>, "ref"> & React$1.RefAttributes<HTMLUListElement>>;
 declare const SidebarMenuSubItem: React$1.ForwardRefExoticComponent<Omit<React$1.DetailedHTMLProps<React$1.LiHTMLAttributes<HTMLLIElement>, HTMLLIElement>, "ref"> & React$1.RefAttributes<HTMLLIElement>>;
 declare const SidebarMenuSubButton: React$1.ForwardRefExoticComponent<Omit<React$1.ClassAttributes<HTMLAnchorElement> & React$1.AnchorHTMLAttributes<HTMLAnchorElement> & {
-    asChild?: boolean | undefined;
-    size?: "sm" | "md" | undefined;
-    isActive?: boolean | undefined;
+    asChild?: boolean;
+    size?: "sm" | "md";
+    isActive?: boolean;
 }, "ref"> & React$1.RefAttributes<HTMLAnchorElement>>;
 
 declare const Skeleton: {
-    ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>): react_jsx_runtime.JSX.Element;
+    ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>): React$1.JSX.Element;
     displayName: string;
 };
 
 declare const Slider: React$1.ForwardRefExoticComponent<Omit<SliderPrimitive.SliderProps & React$1.RefAttributes<HTMLSpanElement>, "ref"> & React$1.RefAttributes<HTMLSpanElement>>;
 
-declare function Spinner({ className, ...props }: Omit<React$1.ComponentProps<typeof Icon>, "icon">): react_jsx_runtime.JSX.Element;
+declare function Spinner({ className, ...props }: Omit<React$1.ComponentProps<typeof Icon>, "icon">): React$1.JSX.Element;
 
 interface DualSliderProps extends React$1.ComponentPropsWithoutRef<typeof SliderPrimitive.Root>, VariantProps<typeof colorVariants> {
     color?: Color;
@@ -1001,12 +1012,12 @@ type ToastProps = React$1.ComponentPropsWithoutRef<typeof Toast$1>;
 type ToastActionElement = React$1.ReactElement<typeof ToastAction>;
 
 declare const Toaster$1: {
-    (): react_jsx_runtime.JSX.Element;
+    (): React$1.JSX.Element;
     displayName: string;
 };
 
 type ToasterProps = React.ComponentProps<typeof Toaster$2>;
-declare const Toaster: ({ ...props }: ToasterProps) => react_jsx_runtime.JSX.Element;
+declare const Toaster: ({ ...props }: ToasterProps) => React$1.JSX.Element;
 
 declare const toggleVariants: (props?: ({
     variant?: "default" | "outline" | null | undefined;
@@ -1025,13 +1036,6 @@ declare const ToggleGroupItem: React$1.ForwardRefExoticComponent<Omit<ToggleGrou
     variant?: "default" | "outline" | null | undefined;
     size?: "default" | "sm" | "lg" | null | undefined;
 } & ClassProp) | undefined) => string> & React$1.RefAttributes<HTMLButtonElement>>;
-
-declare const TooltipProvider: React$1.FC<TooltipPrimitive.TooltipProviderProps>;
-declare const Tooltip: React$1.FC<TooltipPrimitive.TooltipProps>;
-declare const TooltipTrigger: React$1.ForwardRefExoticComponent<TooltipPrimitive.TooltipTriggerProps & React$1.RefAttributes<HTMLButtonElement>>;
-declare const TooltipArrow: React$1.ForwardRefExoticComponent<TooltipPrimitive.TooltipArrowProps & React$1.RefAttributes<SVGSVGElement>>;
-declare const TooltipPortal: React$1.FC<TooltipPrimitive.TooltipPortalProps>;
-declare const TooltipContent: React$1.ForwardRefExoticComponent<Omit<TooltipPrimitive.TooltipContentProps & React$1.RefAttributes<HTMLDivElement>, "ref"> & React$1.RefAttributes<HTMLDivElement>>;
 
 type ToasterToast = ToastProps & {
     id: string;
@@ -1183,7 +1187,7 @@ interface DateTimePickerProps {
     onChange: (date: Date) => void;
 }
 declare const DateTimePicker: {
-    ({ value, onChange }: DateTimePickerProps): react_jsx_runtime.JSX.Element;
+    ({ value, onChange }: DateTimePickerProps): React$1.JSX.Element;
     displayName: string;
 };
 
@@ -1197,7 +1201,7 @@ interface DatePickerProps {
     onChange: (date?: Date) => void;
 }
 declare const DatePicker: {
-    ({ value, onChange }: DatePickerProps): react_jsx_runtime.JSX.Element;
+    ({ value, onChange }: DatePickerProps): React$1.JSX.Element;
     displayName: string;
 };
 
@@ -1339,11 +1343,11 @@ declare const useSkipper: () => readonly [boolean, () => void];
 declare const Filter: ({ column, table, }: {
     column: Column<any, any>;
     table: Table$1<any>;
-}) => react_jsx_runtime.JSX.Element;
+}) => React$1.JSX.Element;
 declare const DataTable: React$1.FC<DataTableWithPagination | DataTableWithoutPagination>;
 
-declare const ResizablePanelGroup: ({ className, ...props }: React.ComponentProps<typeof ResizablePrimitive.PanelGroup>) => react_jsx_runtime.JSX.Element;
-declare const ResizablePanel: React$1.ForwardRefExoticComponent<Omit<React$1.HTMLAttributes<HTMLDivElement | HTMLElement | HTMLObjectElement | HTMLAnchorElement | HTMLButtonElement | HTMLFormElement | HTMLHeadingElement | HTMLImageElement | HTMLInputElement | HTMLLabelElement | HTMLLIElement | HTMLOListElement | HTMLParagraphElement | HTMLSpanElement | HTMLUListElement | HTMLAreaElement | HTMLAudioElement | HTMLBaseElement | HTMLQuoteElement | HTMLBodyElement | HTMLBRElement | HTMLCanvasElement | HTMLTableColElement | HTMLDataElement | HTMLDataListElement | HTMLModElement | HTMLDetailsElement | HTMLDialogElement | HTMLDListElement | HTMLEmbedElement | HTMLFieldSetElement | HTMLHeadElement | HTMLHRElement | HTMLHtmlElement | HTMLIFrameElement | HTMLLegendElement | HTMLLinkElement | HTMLMapElement | HTMLMetaElement | HTMLMeterElement | HTMLOptGroupElement | HTMLOptionElement | HTMLOutputElement | HTMLPreElement | HTMLProgressElement | HTMLSlotElement | HTMLScriptElement | HTMLSelectElement | HTMLSourceElement | HTMLStyleElement | HTMLTableElement | HTMLTemplateElement | HTMLTableSectionElement | HTMLTableCellElement | HTMLTextAreaElement | HTMLTimeElement | HTMLTitleElement | HTMLTableRowElement | HTMLTrackElement | HTMLVideoElement | HTMLTableCaptionElement | HTMLMenuElement | HTMLPictureElement>, "id" | "onResize"> & {
+declare const ResizablePanelGroup: ({ className, ...props }: React.ComponentProps<typeof ResizablePrimitive.PanelGroup>) => React$1.JSX.Element;
+declare const ResizablePanel: React$1.ForwardRefExoticComponent<Omit<React$1.HTMLAttributes<HTMLDivElement | HTMLElement | HTMLObjectElement | HTMLAnchorElement | HTMLButtonElement | HTMLFormElement | HTMLHeadingElement | HTMLImageElement | HTMLInputElement | HTMLLabelElement | HTMLLIElement | HTMLOListElement | HTMLParagraphElement | HTMLSelectElement | HTMLSpanElement | HTMLUListElement | HTMLAreaElement | HTMLAudioElement | HTMLBaseElement | HTMLQuoteElement | HTMLBodyElement | HTMLBRElement | HTMLCanvasElement | HTMLTableColElement | HTMLDataElement | HTMLDataListElement | HTMLModElement | HTMLDetailsElement | HTMLDialogElement | HTMLDListElement | HTMLEmbedElement | HTMLFieldSetElement | HTMLHeadElement | HTMLHRElement | HTMLHtmlElement | HTMLIFrameElement | HTMLLegendElement | HTMLLinkElement | HTMLMapElement | HTMLMetaElement | HTMLMeterElement | HTMLOptGroupElement | HTMLOptionElement | HTMLOutputElement | HTMLPreElement | HTMLProgressElement | HTMLSlotElement | HTMLScriptElement | HTMLSourceElement | HTMLStyleElement | HTMLTableElement | HTMLTemplateElement | HTMLTableSectionElement | HTMLTableCellElement | HTMLTextAreaElement | HTMLTimeElement | HTMLTitleElement | HTMLTableRowElement | HTMLTrackElement | HTMLVideoElement | HTMLTableCaptionElement | HTMLMenuElement | HTMLPictureElement>, "id" | "onResize"> & {
     className?: string | undefined;
     collapsedSize?: number | undefined;
     collapsible?: boolean | undefined;
@@ -1360,22 +1364,9 @@ declare const ResizablePanel: React$1.ForwardRefExoticComponent<Omit<React$1.HTM
 } & {
     children?: React$1.ReactNode;
 } & React$1.RefAttributes<ResizablePrimitive.ImperativePanelHandle>>;
-declare const ResizableHandle: ({ withHandle, className, ...props }: Omit<React$1.HTMLAttributes<keyof HTMLElementTagNameMap>, "id" | "onFocus" | "onBlur"> & {
-    className?: string | undefined;
-    disabled?: boolean | undefined;
-    hitAreaMargins?: ResizablePrimitive.PointerHitAreaMargins | undefined;
-    id?: string | null | undefined;
-    onBlur?: (() => void) | undefined;
-    onDragging?: ResizablePrimitive.PanelResizeHandleOnDragging | undefined;
-    onFocus?: (() => void) | undefined;
-    style?: React$1.CSSProperties | undefined;
-    tabIndex?: number | undefined;
-    tagName?: keyof HTMLElementTagNameMap | undefined;
-} & {
-    children?: React$1.ReactNode;
-} & {
-    withHandle?: boolean | undefined;
-}) => react_jsx_runtime.JSX.Element;
+declare const ResizableHandle: ({ withHandle, className, ...props }: React.ComponentProps<typeof ResizablePrimitive.PanelResizeHandle> & {
+    withHandle?: boolean;
+}) => React$1.JSX.Element;
 
 interface StepContextType {
     currentStepIndex: number;
