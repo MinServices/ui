@@ -22,7 +22,6 @@ import { DialogProps as DialogProps$2 } from '@radix-ui/react-dialog';
 import * as ContextMenuPrimitive from '@radix-ui/react-context-menu';
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 import * as LabelPrimitive from '@radix-ui/react-label';
-import * as _radix_ui_react_slot from '@radix-ui/react-slot';
 import * as react_hook_form from 'react-hook-form';
 import { FieldValues, FieldPath, ControllerProps } from 'react-hook-form';
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
@@ -628,7 +627,9 @@ declare const useFormField: () => {
 };
 declare const FormItem: React$1.ForwardRefExoticComponent<React$1.HTMLAttributes<HTMLDivElement> & React$1.RefAttributes<HTMLDivElement>>;
 declare const FormLabel: React$1.ForwardRefExoticComponent<Omit<LabelPrimitive.LabelProps & React$1.RefAttributes<HTMLLabelElement>, "ref"> & React$1.RefAttributes<HTMLLabelElement>>;
-declare const FormControl: React$1.ForwardRefExoticComponent<Omit<_radix_ui_react_slot.SlotProps & React$1.RefAttributes<HTMLElement>, "ref"> & React$1.RefAttributes<HTMLElement>>;
+declare const FormControl: React$1.ForwardRefExoticComponent<Omit<React$1.HTMLAttributes<HTMLElement> & {
+    children?: React$1.ReactNode;
+} & React$1.RefAttributes<HTMLElement>, "ref"> & React$1.RefAttributes<HTMLElement>>;
 declare const FormDescription: React$1.ForwardRefExoticComponent<React$1.HTMLAttributes<HTMLParagraphElement> & React$1.RefAttributes<HTMLParagraphElement>>;
 declare const FormMessage: React$1.ForwardRefExoticComponent<React$1.HTMLAttributes<HTMLParagraphElement> & React$1.RefAttributes<HTMLParagraphElement>>;
 
